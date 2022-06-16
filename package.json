@@ -1,0 +1,26 @@
+{
+  "name": "vite-wasm-node14-bug",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "author": "Yehyoung Kang <keepyourhonor@gmail.com>",
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "build-wasm": "wasm-pack build add-two-numbers && rimraf './add-two-numbers/pkg/!(*.wasm)'",
+    "start": "node dist/index.js"
+  },
+  "devDependencies": {
+    "@types/node": "^14.18.21",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.7.3",
+    "vite": "^3.0.0-alpha.12"
+  },
+  "optionalDependencies": {
+    "wasm-pack": "^0.10.3"
+  },
+  "engines": {
+    "node": "<16",
+    "npm": ">=7"
+  }
+}
