@@ -1,4 +1,4 @@
-import wasmInit from "./add-two-numbers/pkg/add_two_numbers_bg.wasm?init";
+import wasmInit from "./add-two-numbers/pkg/add_two_numbers_bg.wasm";
 
 const a = 123;
 const b = 456;
